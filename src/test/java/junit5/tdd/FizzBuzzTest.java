@@ -24,12 +24,12 @@ class FizzBuzzTest {
     void should_return_3_when_counting_off_given_3() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
-        int inputNumber = 1;
+        int inputNumber = 3;
 
         //when
         String result = fizzBuzz.countOff(inputNumber);
 
         //then
-        assertEquals("3", result);
+        assertEquals("Fizz", result);
     }
 }
