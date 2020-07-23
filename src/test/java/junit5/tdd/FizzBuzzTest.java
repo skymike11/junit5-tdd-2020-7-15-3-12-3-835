@@ -34,7 +34,7 @@ class FizzBuzzTest {
     }
 
     @Test
-    void should_return_5_when_counting_off_given_5() {
+    void should_return_5_when_counting_off_given_the_multiples_of_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         int inputNumber = 5;
@@ -44,5 +44,18 @@ class FizzBuzzTest {
 
         //then
         assertEquals("Buzz", result);
+    }
+
+    @Test
+    void should_return_15_when_counting_off_given_the_multiples_of_3_and_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 15;
+
+        //when
+        String result = fizzBuzz.countOff(inputNumber);
+
+        //then
+        assertEquals("FizzBuzz", result);
     }
 }
