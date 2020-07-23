@@ -14,9 +14,9 @@ class FizzBuzzTest {
         int inputNumber = 1;
 
         //when
-        int result = fizzBuzz.countOff(inputNumber);
+        String result = fizzBuzz.countOff(inputNumber);
 
         //then
-        assertEquals(1, result);
+        assertEquals("1", result);
     }
 }

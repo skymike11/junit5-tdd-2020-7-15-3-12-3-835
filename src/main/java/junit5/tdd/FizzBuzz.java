@@ -2,8 +2,12 @@ package junit5.tdd;
 
 public class FizzBuzz {
 
-    public int countOff (int number) {
-        return -1;
+    public String countOff(int number) {
+        if (number == 1) {
+            return String.valueOf(1);
+        }
+
+        return null;
     }
 
 }
